@@ -1,7 +1,7 @@
 ---
 
 - name: PowerShellModule
-  hosts: "{{host_name}}"
+  hosts: all
   gather_facts: false
 
   tasks:
