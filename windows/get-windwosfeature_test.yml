@@ -1,0 +1,11 @@
+---
+
+- name: PowerShellModule
+  hosts: "{{host_name}}"
+  gather_facts: false
+
+  tasks:
+    - name: Get hostname
+      community.windows.win_feature_info:
+        name: DNS
+      register: feature_info
