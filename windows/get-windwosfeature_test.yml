@@ -9,3 +9,7 @@
       community.windows.win_feature_info:
         name: DNS
       register: feature_info
+    
+    - name: print output
+      debug:
+        var: feature_info
