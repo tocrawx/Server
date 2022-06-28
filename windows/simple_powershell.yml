@@ -17,3 +17,7 @@
 
   - name: Run a script
     win_shell: C:\temp\test.ps1
+
+  - name: print output
+    debug:
+      var: feature_info
