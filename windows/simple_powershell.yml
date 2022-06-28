@@ -3,7 +3,7 @@
   tasks:
 
   - name: Single line PowerShell
-    win_shell: vSet-Content -Path C:\temp\test.txt -Value 'Hello there. '
+    win_shell: Set-Content -Path C:\temp\test.txt -Value 'Hello there. '
 
   - name: Run multi-lined shell commands
     win_shell: |
